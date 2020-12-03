@@ -1,0 +1,472 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-02T23:58:28.171Z",
+        "line": 5,
+        "name": "User login scenario",
+        "description": "",
+        "id": "login;user-login-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3922000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 387000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User logs in as user with valid credentials",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_logs_in_as_user_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 812000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see Account summary page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_should_see_account_summary_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-02T23:58:33.352Z",
+        "line": 20,
+        "name": "Users login scenario",
+        "description": "",
+        "id": "login;users-login-scenario;example-test-data-for-wikipedia-search;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3306000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input wrong username  \"qwerty\" the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongUsernameTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input wrong password \"qwerty\" in the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongPasswordInTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see error message",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@UsersOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-02T23:58:36.884Z",
+        "line": 21,
+        "name": "Users login scenario",
+        "description": "",
+        "id": "login;users-login-scenario;example-test-data-for-wikipedia-search;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input wrong username  \"qwerty\" the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongUsernameTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input wrong password \"password\" in the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongPasswordInTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see error message",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@UsersOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-02T23:58:37.177Z",
+        "line": 22,
+        "name": "Users login scenario",
+        "description": "",
+        "id": "login;users-login-scenario;example-test-data-for-wikipedia-search;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input wrong username  \"username\" the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongUsernameTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input wrong password \"qwerty\" in the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongPasswordInTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see error message",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@UsersOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-02T23:58:37.471Z",
+        "line": 23,
+        "name": "Users login scenario",
+        "description": "",
+        "id": "login;users-login-scenario;example-test-data-for-wikipedia-search;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input wrong username  \"\" the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongUsernameTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input wrong password \"password\" in the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongPasswordInTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see error message",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@UsersOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-02T23:58:37.747Z",
+        "line": 24,
+        "name": "Users login scenario",
+        "description": "",
+        "id": "login;users-login-scenario;example-test-data-for-wikipedia-search;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User input wrong username  \"username\" the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongUsernameTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input wrong password \"\" in the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userInputWrongPasswordInTheLoginPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see error message",
+            "match": {
+              "location": "com.bitrix.stepdefinitions.LoginStepdefs.userShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@UsersOutline"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
