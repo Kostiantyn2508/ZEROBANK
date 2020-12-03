@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class ConfigurationReader {
     //1- we created properties object
+    //1- we created properties object
     private static Properties properties = new Properties();
 
 
@@ -33,7 +34,4 @@ public class ConfigurationReader {
     }
 
 
-
-
 }
-
