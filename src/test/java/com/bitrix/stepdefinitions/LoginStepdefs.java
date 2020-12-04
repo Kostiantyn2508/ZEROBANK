@@ -43,15 +43,15 @@ public class LoginStepdefs {
     @When("User input wrong password {string} in the login page")
     public void userInputWrongPasswordInTheLoginPage(String string) {
         loginPage.setPassword(string);
-        loginPage.setLoginButton();
+        loginPage.loginButton.click();
     }
 
 
     @Then("User should see error message")
     public void userShouldSeeErrorMessage() throws InterruptedException {
 
-        String actualHeader = Driver.getDriver().getTitle();
-        String expectedHeader = "Zero - Log in";
+        String actualHeader = loginPage.errorMessage.getText();
+        String expectedHeader = "Login and/or password are wrong.";
         Assert.assertTrue(actualHeader.contains(expectedHeader));
 
     }
