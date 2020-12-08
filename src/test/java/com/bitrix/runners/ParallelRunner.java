@@ -13,11 +13,11 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/Login.feature",
         glue = "com/bitrix/stepdefinitions",
-        dryRun = false,
+        //dryRun = false,
         tags = "@Login "
 )
 
-public class CukesRunner {
+public class ParallelRunner {
 
 
 }
