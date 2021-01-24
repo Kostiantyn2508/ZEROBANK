@@ -1,4 +1,4 @@
-package com.bitrix.stepdefinitions;
+package com.bitrix.step_definitions;
 
 import com.bitrix.pages.LoginPage;
 import com.bitrix.utilities.ConfigurationReader;
