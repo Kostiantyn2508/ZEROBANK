@@ -14,7 +14,11 @@ public class LoginPage extends BasePage {
     private WebElement password;
 
     @FindBy(xpath = "//input[@value='Sign in']")
-    private WebElement loginButton;
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//div[@class='alert alert-error']")
+    public WebElement errorMessage;
+
 
 
 
@@ -37,8 +41,5 @@ public class LoginPage extends BasePage {
         password.sendKeys(str);
     }
 
-    public void setLoginButton() {
-        this.loginButton = loginButton;
-        loginButton.click();
-    }
+
 }
